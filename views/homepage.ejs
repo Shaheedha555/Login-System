@@ -1,0 +1,56 @@
+<%-include('header')-%>
+
+<!-- 
+<div class="text-center center-div mt-5" id="login">
+    <div class="container w-25 border py-5 mt-5">
+        <h3>welcome</h3>
+        <h5><%= locals.user ? user:'User' %></h5>
+         <a href="/route/logout">logout</a> 
+    </div>
+</div> -->
+
+
+
+<div id="login">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#!">HOME PAGE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="home text-center pt-5">
+        <div class="container my-5 border border-dark w-30 py-3">
+            <!-- <img class="img-fluid rounded-circle mb-4" src="pro-img.jpg" /> -->
+            <h1 class="text-dark fs-10 fw-bolder">WELCOME Shaheedha !</h1>
+            <p class="text-white-50 mb-0">Online</p>
+            <h5><%= locals.user ? user:"User" %></h5>
+            <!-- <a href="/route/logout">logout</a>  -->
+            <a onclick="location.reload(true)" href="/route/logout"> <button type="" class="btn btn-success rounded-pill mt-3">Logout</button></a>
+    
+    
+        </div>
+    </section> 
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+    </footer>
+</div>
+
+
+
+
+<!-- Footer -->
+
+
+
+
+
+
+<%-include('footer')-%>
